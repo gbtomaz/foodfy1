@@ -1,0 +1,185 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 30px auto; ;
+}
+
+/* =================== HEADER =================== */
+.hdr-principal {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 91px 2fr;  
+    align-items: center; 
+    gap: 40px;
+    margin-bottom: 30px;
+    max-width: 940px ;
+}
+.hdr-principal img {
+    width: 90.6px;
+    height: 26.9px;
+}
+.hdr-links a{
+    padding: 19px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* =================== BANNER =================== */
+.banner-principal{
+    background: #FBDFDB;
+    height: 366px;
+    border-radius: 30px;
+    margin: 0px auto;
+    max-width: 940px;
+}
+.banner-content { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.banner-text {
+    margin-left: 60px;
+    max-width: 320px;
+}
+.banner-text h1 {
+    font-family: Roboto-Bold;
+    margin: auto auto;
+    font-size: 32px;
+    line-height: 38px;
+}
+.banner-text p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.banner-img{
+    margin-left: 160px;
+    align-self: flex-end;
+}
+
+/* =================== RECEITAS =================== */
+
+.most-popular h1 {
+    margin: 0px auto;
+    padding: 30px 0px 15px 0px;
+    font-size: 24px;
+    max-width: 960px;
+}
+.most-popular .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    max-width: 960px;
+    margin: 0px auto;
+
+}
+
+.card{
+    width: 100%
+}
+.card img{
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.card .card-title{
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+.card .card-by{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+/* =================== MODAL =================== */
+
+.modal--overlay{
+    background-color: rgb(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    opacity: 1;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 660px;
+    height: 413px;
+    margin: 20vh auto;
+    border-radius: 20px;
+    
+}
+
+.modal .close--modal{
+    color: #999999;
+    font-size: 16px;
+    font-family: Roboto-Regular;
+    cursor: pointer;
+}
+
+/* === MODAL.ACTIVE ===*/
+
+.modal--overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal--content{
+    width: 99%;
+    height: 100%;
+    text-align: center;
+    margin: 0px auto;    
+}
+.content--container{ 
+   width: 100%;
+   height: 85%;
+  
+}
+
+.wrapper{
+    padding: 50px;
+    max-width: 400px;
+    margin: 40px auto;
+}
+.wrapper .card-title{
+
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+.wrapper .card-by{
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+}
+.wrapper img{
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}   
